@@ -17,24 +17,14 @@ let activeSoundCounts = {
     "Comical": 0,
     "Combat": 0,
     "Transformation": 0,
-    "Upbeat": 0,
     "BeautyAndTheBeast": 0,
-
-    "Comical_1": 0,
-    "Comical_2": 0,
-    "Comical_3": 0,
-    "Comical_4": 0,
-    "Comical_5": 0,
 
     "Horse": 0,
     "BeastGrowl": 0,
     "Blizzard": 0,
     "WolfGrowl": 0,
-    "BreakDoor": 0,
     "Burning": 0,
-    "AppearKnife": 0,
-    "StabWithKnife": 0,
-    "Collapse": 0,
+    "Gunshot": 0,
 };
 
 function playMultiSound(id) {
