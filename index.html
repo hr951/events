@@ -43,14 +43,14 @@
             </div>
 
             <div class="button-pair" data-control-id="Belle-A">
-                <button class="sound-btn" onclick="playMultiSound('Belle-on')">朝の風景_A<br>(ボーカルあり)</button>
+                <button class="sound-btn" onclick="playMultiSound('Belle-part-on')">朝の風景_A<br>(ボンジュールのみボーカルあり)</button>
                 <button class="sound-btn" onclick="playMultiSound('Belle-off')">朝の風景_A<br>(ボーカルなし)</button>
                 <div class="control-row">
                     <button class="individual-stop-btn"
-                        onclick="stopSpecificSound('Belle-on'), stopSpecificSound('Belle-off')"
+                        onclick="stopSpecificSound('Belle-part-on'), stopSpecificSound('Belle-off')"
                         title="この音だけ停止">X</button>
                     <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="1"
-                        oninput="updateVolume('Belle-on', this.value), updateVolume('Belle-off', this.value)">
+                        oninput="updateVolume('Belle-part-on', this.value), updateVolume('Belle-off', this.value)">
                     <div class="playing-indicator">
                         <svg class="speaker-icon" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
@@ -68,14 +68,12 @@
             </div>
 
             <div class="button-pair" data-control-id="Belle-B">
-                <button class="sound-btn" onclick="playMultiSound('Belle_B-on')">朝の風景_B<br>(ボーカルあり)</button>
                 <button class="sound-btn" onclick="playMultiSound('Belle_B-off')">朝の風景_B<br>(ボーカルなし)</button>
                 <div class="control-row">
-                    <button class="individual-stop-btn"
-                        onclick="stopSpecificSound('Belle_B-on'), stopSpecificSound('Belle_B-off')"
+                    <button class="individual-stop-btn" onclick="stopSpecificSound('Belle_B-off')"
                         title="この音だけ停止">X</button>
                     <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="1"
-                        oninput="updateVolume('Belle_B-on', this.value), updateVolume('Belle_B-off', this.value)">
+                        oninput="updateVolume('Belle_B-off', this.value)">
                     <div class="playing-indicator">
                         <svg class="speaker-icon" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
@@ -93,14 +91,15 @@
             </div>
 
             <div class="button-pair" data-control-id="BeOurGuest">
-                <button class="sound-btn" onclick="playMultiSound('BeOurGuest-on')">ひとりぼっちの晩餐会<br>(ボーカルあり)</button>
+                <button class="sound-btn"
+                    onclick="playMultiSound('BeOurGuest-part-on')">ひとりぼっちの晩餐会<br>(語りのみボーカルあり)</button>
                 <button class="sound-btn" onclick="playMultiSound('BeOurGuest-off')">ひとりぼっちの晩餐会<br>(ボーカルなし)</button>
                 <div class="control-row">
                     <button class="individual-stop-btn"
-                        onclick="stopSpecificSound('BeOurGuest-on'), stopSpecificSound('BeOurGuest-off')"
+                        onclick="stopSpecificSound('BeOurGuest-part-on'), stopSpecificSound('BeOurGuest-off')"
                         title="この音だけ停止">X</button>
                     <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="1"
-                        oninput="updateVolume('BeOurGuest-on', this.value), updateVolume('BeOurGuest-off', this.value)">
+                        oninput="updateVolume('BeOurGuest-part-on', this.value), updateVolume('BeOurGuest-off', this.value)">
                     <div class="playing-indicator">
                         <svg class="speaker-icon" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
@@ -143,14 +142,12 @@
             </div>
 
             <div class="button-pair" data-control-id="Gaston">
-                <button class="sound-btn" onclick="playMultiSound('Gaston-on')">強いぞ、ガストン<br>(ボーカルあり)</button>
                 <button class="sound-btn" onclick="playMultiSound('Gaston-off')">強いぞ、ガストン<br>(ボーカルなし)</button>
                 <div class="control-row">
-                    <button class="individual-stop-btn"
-                        onclick="stopSpecificSound('Gaston-on'), stopSpecificSound('Gaston-off')"
+                    <button class="individual-stop-btn" onclick="stopSpecificSound('Gaston-off')"
                         title="この音だけ停止">X</button>
                     <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="1"
-                        oninput="updateVolume('Gaston-on', this.value), updateVolume('Gaston-off', this.value)">
+                        oninput="updateVolume('Gaston-off', this.value)">
                     <div class="playing-indicator">
                         <svg class="speaker-icon" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
@@ -192,14 +189,12 @@
             </div>
 
             <div class=" button-pair" data-control-id="TheMobSong">
-                <button class="sound-btn" onclick="playMultiSound('TheMobSong-on')">夜襲の歌<br>(ボーカルあり)</button>
                 <button class="sound-btn" onclick="playMultiSound('TheMobSong-off')">夜襲の歌<br>(ボーカルなし)</button>
                 <div class="control-row">
-                    <button class="individual-stop-btn"
-                        onclick="stopSpecificSound('TheMobSong-on'), stopSpecificSound('TheMobSong-off')"
+                    <button class="individual-stop-btn" onclick="stopSpecificSound('TheMobSong-off')"
                         title="この音だけ停止">X</button>
                     <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="1"
-                        oninput="updateVolume('TheMobSong-on', this.value), updateVolume('TheMobSong-off', this.value)">
+                        oninput="updateVolume('TheMobSong-off', this.value)">
                     <div class="playing-indicator">
                         <svg class="speaker-icon" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
@@ -503,6 +498,9 @@
     <audio id="Belle-off"
         src="https://github.com/hr951/hr951.github.io/raw/refs/heads/main/events/musics/BGM/Off%20Vocal%20-%20%E6%9C%9D%E3%81%AE%E9%A2%A8%E6%99%AF_A.mp3"
         preload="auto"></audio>
+    <audio id="Belle-part-on"
+        src="https://github.com/hr951/hr951.github.io/raw/refs/heads/main/events/musics/BGM/%E4%B8%80%E9%83%A8On%20-%20%E6%9C%9D%E3%81%AE%E9%A2%A8%E6%99%AF_A.mp3"
+        preload="auto"></audio>
     <audio id="Belle_B-on"
         src="https://github.com/hr951/hr951.github.io/raw/refs/heads/main/events/musics/BGM/On%20Vocal%20-%20%E6%9C%9D%E3%81%AE%E9%A2%A8%E6%99%AF_B.mp3"
         preload="auto"></audio>
@@ -514,6 +512,9 @@
         preload="auto"></audio>
     <audio id="BeOurGuest-off"
         src="https://github.com/hr951/hr951.github.io/raw/refs/heads/main/events/musics/BGM/Off%20Vocal%20-%20%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%BC%E3%81%A3%E3%81%A1%E3%81%AE%E6%99%A9%E9%A4%90%E4%BC%9A.mp3"
+        preload="auto"></audio>
+    <audio id="BeOurGuest-part-on"
+        src="https://github.com/hr951/hr951.github.io/raw/refs/heads/main/events/musics/BGM/%E4%B8%80%E9%83%A8On%20-%20%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%BC%E3%81%A3%E3%81%A1%E3%81%AE%E6%99%A9%E9%A4%90%E4%BC%9A.mp3"
         preload="auto"></audio>
     <audio id="SomethingThere-on"
         src="https://github.com/hr951/hr951.github.io/raw/refs/heads/main/events/musics/BGM/On%20Vocal%20-%20%E6%84%9B%E3%81%AE%E8%8A%BD%E7%94%9F%E3%81%88.mp3"
