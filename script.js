@@ -30,6 +30,19 @@ let activeSoundCounts = {
 
 function playMultiSound(id) {
     const master = document.getElementById(id);
+    if (id.startsWith("Belle-")) {
+        id = "Belle-A";
+    } else if (id.startsWith("Belle_B-")) {
+        id = "Belle-B";
+    } else if (id.startsWith("Gaston-")) {
+        id = "Gaston";
+    } else if (id.startsWith("BeOurGuest-")) {
+        id = "BeOurGuest";
+    } else if (id.startsWith("SomethingThere-")) {
+        id = "SomethingThere";
+    } else if (id.startsWith("TheMobSong-")) {
+        id = "TheMobSong";
+    }
     if (master) {
         activeSoundCounts[id]++;
         // 🔊 UIを更新（スピーカーマーク表示）
@@ -54,6 +67,19 @@ function playMultiSound(id) {
 }
 
 function handleSoundStop(id) {
+    if (id.startsWith("Belle-")) {
+        id = "Belle-A";
+    } else if (id.startsWith("Belle_B-")) {
+        id = "Belle-B";
+    } else if (id.startsWith("Gaston-")) {
+        id = "Gaston";
+    } else if (id.startsWith("BeOurGuest-")) {
+        id = "BeOurGuest";
+    } else if (id.startsWith("SomethingThere-")) {
+        id = "SomethingThere";
+    } else if (id.startsWith("TheMobSong-")) {
+        id = "TheMobSong";
+    }
     activeSoundCounts[id]--;
     // 1つでも鳴っていれば表示を維持、すべて止まった時だけ消す
     if (activeSoundCounts[id] <= 0) {
