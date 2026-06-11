@@ -23,8 +23,9 @@ let activeSoundCounts = {
     "BeastGrowl": 0,
     "Blizzard": 0,
     "WolfGrowl": 0,
-    "Burning": 0,
+    "WolfReturnGrowl": 0,
     "Gunshot": 0,
+    "Collapse": 0,
 };
 
 function playMultiSound(id) {

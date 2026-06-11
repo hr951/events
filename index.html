@@ -20,7 +20,7 @@
         <div class="grid-container">
 
             <div class="button-pair" data-control-id="Prologue">
-                <button class="sound-btn" onclick="playMultiSound('Prologue')">Prologue<br>(序章(語り))</button>
+                <button class="sound-btn" onclick="playMultiSound('Prologue')">Prologue</button>
                 <div class="control-row">
                     <button class="individual-stop-btn" onclick="stopSpecificSound('Prologue')"
                         title="この音だけ停止">X</button>
@@ -43,8 +43,8 @@
             </div>
 
             <div class="button-pair" data-control-id="Belle-A">
-                <button class="sound-btn" onclick="playMultiSound('Belle-part-on')">朝の風景_A<br>(ボンジュールのみボーカルあり)</button>
-                <button class="sound-btn" onclick="playMultiSound('Belle-off')">朝の風景_A<br>(ボーカルなし)</button>
+                <button class="sound-btn" onclick="playMultiSound('Belle-part-on')">朝の風景 A<br>(ボンジュールのみボーカルあり)</button>
+                <button class="sound-btn" onclick="playMultiSound('Belle-off')">朝の風景 A<br>(ボーカルなし)</button>
                 <div class="control-row">
                     <button class="individual-stop-btn"
                         onclick="stopSpecificSound('Belle-part-on'), stopSpecificSound('Belle-off')"
@@ -68,7 +68,7 @@
             </div>
 
             <div class="button-pair" data-control-id="Belle-B">
-                <button class="sound-btn" onclick="playMultiSound('Belle_B-off')">朝の風景_B<br>(ボーカルなし)</button>
+                <button class="sound-btn" onclick="playMultiSound('Belle_B-off')">朝の風景 B</button>
                 <div class="control-row">
                     <button class="individual-stop-btn" onclick="stopSpecificSound('Belle_B-off')"
                         title="この音だけ停止">X</button>
@@ -117,14 +117,13 @@
             </div>
 
             <div class="button-pair" data-control-id="SomethingThere">
-                <button class="sound-btn" onclick="playMultiSound('SomethingThere-on')">愛の芽生え<br>(ボーカルあり)</button>
-                <button class="sound-btn" onclick="playMultiSound('SomethingThere-off')">愛の芽生え<br>(ボーカルなし)</button>
+                <button class="sound-btn" onclick="playMultiSound('SomethingThere-off')">愛の芽生え</button>
                 <div class="control-row">
                     <button class="individual-stop-btn"
-                        onclick="stopSpecificSound('SomethingThere-on'), stopSpecificSound('SomethingThere-off')"
+                        onclick="stopSpecificSound('SomethingThere-off')"
                         title="この音だけ停止">X</button>
                     <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="1"
-                        oninput="updateVolume('SomethingThere-on', this.value), updateVolume('SomethingThere-off', this.value)">
+                        oninput="updateVolume('SomethingThere-off', this.value)">
                     <div class="playing-indicator">
                         <svg class="speaker-icon" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
@@ -142,7 +141,7 @@
             </div>
 
             <div class="button-pair" data-control-id="Gaston">
-                <button class="sound-btn" onclick="playMultiSound('Gaston-off')">強いぞ、ガストン<br>(ボーカルなし)</button>
+                <button class="sound-btn" onclick="playMultiSound('Gaston-off')">強いぞ、ガストン</button>
                 <div class="control-row">
                     <button class="individual-stop-btn" onclick="stopSpecificSound('Gaston-off')"
                         title="この音だけ停止">X</button>
@@ -189,7 +188,7 @@
             </div>
 
             <div class=" button-pair" data-control-id="TheMobSong">
-                <button class="sound-btn" onclick="playMultiSound('TheMobSong-off')">夜襲の歌<br>(ボーカルなし)</button>
+                <button class="sound-btn" onclick="playMultiSound('TheMobSong-off')">夜襲の歌</button>
                 <div class="control-row">
                     <button class="individual-stop-btn" onclick="stopSpecificSound('TheMobSong-off')"
                         title="この音だけ停止">X</button>
@@ -429,13 +428,13 @@
                 </div>
             </div>
 
-            <div class="button-pair" data-control-id="Burning">
-                <button class="sound-btn" onclick="playMultiSound('Burning')">あぶる音</button>
+            <div class="button-pair" data-control-id="WolfReturnGrowl">
+                <button class="sound-btn" onclick="playMultiSound('WolfReturnGrowl')">狼の撤退の唸り声</button>
                 <div class="control-row">
-                    <button class="individual-stop-btn" onclick="stopSpecificSound('Burning')"
+                    <button class="individual-stop-btn" onclick="stopSpecificSound('WolfReturnGrowl')"
                         title="この音だけ停止">X</button>
                     <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="1"
-                        oninput="updateVolume('Burning', this.value)">
+                        oninput="updateVolume('WolfReturnGrowl', this.value)">
                     <div class="playing-indicator">
                         <svg class="speaker-icon" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
@@ -459,6 +458,29 @@
                         title="この音だけ停止">X</button>
                     <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="1"
                         oninput="updateVolume('Gunshot', this.value)">
+                    <div class="playing-indicator">
+                        <svg class="speaker-icon" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                            style="width: 32px; height: 32px; opacity: 1;" xml:space="preserve">
+                            <g>
+                                <path class="st0" d="M25.232,175.83v160.34c0,33.299,26.997,60.303,60.295,60.303h112.275V115.542H85.527
+		C52.229,115.542,25.232,142.531,25.232,175.83z"></path>
+                                <path class="st0" d="M477.003,3.023c-6.073-3.722-13.64-4.029-19.989-0.797L233.921,115.542v280.931l223.093,113.3
+		c6.349,3.233,13.916,2.927,19.989-0.795c6.065-3.722,9.765-10.324,9.765-17.462V20.483C486.768,13.361,483.068,6.745,477.003,3.023
+		z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-pair" data-control-id="Collapse">
+                <button class="sound-btn" onclick="playMultiSound('Collapse')">崩れる音</button>
+                <div class="control-row">
+                    <button class="individual-stop-btn" onclick="stopSpecificSound('Collapse')"
+                        title="この音だけ停止">X</button>
+                    <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="1"
+                        oninput="updateVolume('Collapse', this.value)">
                     <div class="playing-indicator">
                         <svg class="speaker-icon" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
@@ -544,10 +566,10 @@
     <!-- BGM -->
     <audio id="Comical"
         src="https://github.com/hr951/hr951.github.io/raw/refs/heads/main/events/musics/BGM/%E9%A7%86%E3%81%91%E6%8A%9C%E3%81%91%E3%82%8D%E3%83%8F%E3%83%AD%E3%82%A6%E3%82%A3%E3%83%B3%E3%83%AC%E3%83%BC%E3%82%B9.mp3"
-        preload="auto"></audio> <!-- まだ -->
+        preload="auto"></audio>
     <audio id="Combat"
         src="https://github.com/hr951/hr951.github.io/raw/refs/heads/main/events/musics/BGM/Devil%20Disaster.mp3"
-        preload="auto"></audio> <!-- まだ -->
+        preload="auto"></audio>
     <audio id="Transformation"
         src="https://github.com/hr951/hr951.github.io/raw/refs/heads/main/events/musics/BGM/Transformation.mp3"
         preload="auto"></audio>
@@ -567,10 +589,12 @@
     <audio id="WolfGrowl"
         src="https://github.com/hr951/hr951.github.io/raw/refs/heads/main/events/musics/SE/Wolf%20Growl.mp3"
         preload="auto"></audio>
-    <audio id="Burning" src="https://github.com/hr951/hr951.github.io/raw/refs/heads/main/events/musics/SE/Burning.mp3"
-        preload="auto"></audio> <!-- まだ -->
-    <audio id="Gunshot" src="https://github.com/hr951/hr951.github.io/raw/refs/heads/main/events/musics/SE/Gunshot.mp3"
-        preload="auto"></audio> <!-- まだ -->
+    <audio id="WolfReturnGrowl" src="https://github.com/hr951/hr951.github.io/raw/refs/heads/main/events/musics/SE/Burning.mp3"
+        preload="auto"></audio>
+    <audio id="Gunshot" src="https://github.com/hr951/hr951.github.io/raw/refs/heads/main/events/musics/SE/WolfReturnGrowl.mp3"
+        preload="auto"></audio>
+    <audio id="Collapse" src="https://github.com/hr951/hr951.github.io/raw/refs/heads/main/events/musics/SE/Collapse.mp3"
+        preload="auto"></audio>
 
     <script src="script.js"></script>
 
